@@ -58,7 +58,8 @@ class r : baseMan
     primaryWeapon[] =
 	{
 		"rhs_weap_ak74m_plummag",
-		"rhs_weap_ak74m_fullplum"
+		LIST_2("rhs_weap_ak74m_fullplum"),
+		"bear_weap_ak74m_orange_mag"
 	};
 	scope[] = {};
     silencer[] = {"rhs_acc_dtk"};
@@ -80,7 +81,11 @@ class g : r
     displayName = "Grenadier";
 	vest[] = {"rhs_6b13_6sh92_vog"};
 	backpack[] = {"rhs_sidor"};
-    primaryWeapon[] = {"rhs_weap_ak74m_gp25"};
+    primaryWeapon[] = 
+	{
+		LIST_2("rhs_weap_ak74m_gp25"),
+		"bear_weap_ak74m_orange_mag_gp25"
+	};
     magazines[] +=
     {
         LIST_8("rhs_VOG25"),
