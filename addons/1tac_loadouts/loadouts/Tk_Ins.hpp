@@ -232,18 +232,18 @@ class mmgag : car
 class hmgg : car
 {
     displayName = "HMG Gunner";
-    backPack[] = {"RHS_Kord_Gun_Bag"};
+    backPack[] = {"RHS_DShkM_Gun_Bag"};
 
 };
 class hmgac : r
 {
     displayName = "HMG Ammo Carrier";
-    backPack[] = {"RHS_M2_Gun_Bag"};
+    backPack[] = {"RHS_DShkM_TripodHigh_Bag"};
 };
 class hmgag : car
 {
 	displayName = "HMG Assistant Gunner";
-	backPack[] = {"RHS_Kord_Tripod_Bag"};
+	backPack[] = {"RHS_DShkM_TripodLow_Bag"};
 	linkedItems[] =
 	{
 		"ItemMap",
@@ -329,7 +329,7 @@ class hatag : matag
 class mtrg : smg
 {
     displayName = "Mortar Gunner";
-    backPack[] = {"B_Mortar_01_weapon_F"};
+    backPack[] = {"RHS_Podnos_Gun_Bag"};
     linkedItems[] =
     {
         "ItemMap",
@@ -340,12 +340,12 @@ class mtrg : smg
 class mtrac : car
 {
     displayName = "Mortar Ammo Carrier";
-    backPack[] = {"I_Mortar_01_weapon_F"};
+    backPack[] = {"RHS_Podnos_Gun_Bag"};
 };
 class mtrag : smg
 {
     displayName = "Mortar Assistant Gunner";
-    backPack[] = {"B_HMG_01_support_F"};
+    backPack[] = {"RHS_Podnos_Bipod_Bag"};
     linkedItems[] =
     {
         "ItemMap",
