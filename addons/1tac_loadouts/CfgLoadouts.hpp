@@ -138,4 +138,10 @@ class CfgLoadouts
 		category = "Armaverse Factions";
 		#include "loadouts\tk_army_brushstroke.hpp"
 	};
+	class TK_INS
+	{
+		displayName = "Takistani Insurgents";
+		category = "Armaverse Factions";
+		#include "loadouts\Tk_Ins.hpp"
+	};
 };
