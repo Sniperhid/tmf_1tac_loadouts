@@ -140,8 +140,8 @@ class CfgLoadouts
 	};
 	class TK_INS
 	{
-		displayName = "Takistani Insurgents"
-		category = "Armaverse Factions"
+		displayName = "Takistani Insurgents";
+		category = "Armaverse Factions";
 		#include "loadouts\Tk_Ins.hpp"
-	}
+	};
 };
