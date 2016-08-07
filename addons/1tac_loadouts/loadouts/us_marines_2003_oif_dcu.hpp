@@ -185,16 +185,14 @@ class fac : co
 class ar : r
 {
 	displayName = "Automatic Rifleman";
-	primaryWeapon[] = {"CUP_lmg_m249_para"};
+	primaryWeapon[] = {"CUP_lmg_M249_E2"};
 	bipod[] = {};
 	vest[] = {"usm_vest_pasgt_lbv_mg"};
-	sidearmWeapon[] = {"rhsusf_weap_m9"};
 	magazines[] =
 	{
-		LIST_6("rhsusf_100Rnd_556x45_soft_pouch"),
+		LIST_6("CUP_100Rnd_TE4_Red_Tracer_556x45_M249"),
 		"HandGrenade",
-		"SmokeShell",
-		LIST_4("rhsusf_mag_15Rnd_9x19_FMJ")
+		"SmokeShell"
 	};
 };
 class aar : r
@@ -202,7 +200,7 @@ class aar : r
     displayName = "Assistant Automatic Rifleman";
     backpackItems[] =
     {
-        LIST_4("rhsusf_100Rnd_556x45_soft_pouch")
+        LIST_4("CUP_100Rnd_TE4_Red_Tracer_556x45_M249")
     };
     linkedItems[] += {"Binocular"};
 };
@@ -234,8 +232,7 @@ class mmgg : ar
 		LIST_4("rhsusf_100Rnd_762x51"),
 		LIST_2("rhsusf_100Rnd_762x51_m80a1epr"),
 		"HandGrenade",
-		"SmokeShell",
-		LIST_4("rhsusf_mag_15Rnd_9x19_FMJ")
+		"SmokeShell"
 	};
 };
 class mmgac : r
