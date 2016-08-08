@@ -205,10 +205,11 @@ class ar : r
 	primaryWeapon[] = {"rhs_weap_pkm"};
 	bipod[] = {};
 	silencer[] = {};
+	backpack[] = {"rhs_assault_umbts"};
 	sidearmWeapon[] = {};
 	magazines[] =
 	{
-		LIST_6("rhs_100Rnd_762x54mmR"),
+		LIST_4("rhs_100Rnd_762x54mmR"),
 		"rhs_mag_rgd5",
 		"rhs_mag_rdg2_white"
 	};
