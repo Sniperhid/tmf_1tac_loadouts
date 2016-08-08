@@ -201,7 +201,7 @@ class ar : r
 	magazines[] =
 	{
 		LIST_4("rhs_45Rnd_545X39_AK"),
-		LIST_2("rhs_45Rnd_545X39_7N22_AK"),
+		LIST_2("rhs_45Rnd_545X39_AK_Green"),
 		"rhs_mag_rgd5",
 		"rhs_mag_rdg2_white"
 	};
@@ -212,9 +212,8 @@ class aar : r
 	backpack[] = {"rhs_assault_umbts"};
     backpackItems[] =
     {
-        LIST_2("rhs_45Rnd_545X39_AK"),
-        LIST_2("rhs_45Rnd_545X39_AK_Green"),
-        LIST_2("rhs_45Rnd_545X39_7N22_AK")
+        LIST_4("rhs_45Rnd_545X39_AK"),
+        LIST_2("rhs_45Rnd_545X39_AK_Green")
     };
     linkedItems[] += {"Binocular"};
 };
@@ -250,6 +249,7 @@ class mmgg : ar
 	bipod[] = {};
 	silencer[] = {};
 	sidearmWeapon[] = {};
+	backpack[] = {"rhs_assault_umbts"};
 	scope[] = {};
 	magazines[] =
 	{
@@ -262,6 +262,7 @@ class mmgg : ar
 class mmgac : r
 {
     displayName = "MMG Ammo Carrier";
+    backpack[] = {"rhs_assault_umbts"};
     backpackItems[] =
     {
         LIST_4("rhs_100Rnd_762x54mmR")
