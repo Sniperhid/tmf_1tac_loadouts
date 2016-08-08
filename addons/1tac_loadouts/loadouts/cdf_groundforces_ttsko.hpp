@@ -238,6 +238,7 @@ class mmgg : ar
 	displayName = "MMG Gunner";
 	primaryWeapon[] = {"rhs_weap_pkm"};
 	sidearmWeapon[] = {};
+	backpack[] = {"rhs_sidor"};
 	scope[] = {};
 	magazines[] =
 	{
@@ -251,6 +252,7 @@ class mmgac : r
 {
     displayName = "MMG Ammo Carrier";
 	vest[] = {"rhsgref_6b23_ttsko_mountain_rifleman","rhsgref_6b23_ttsko_forest_rifleman"};
+	backpack[] = {"rhs_sidor"};
     backpackItems[] =
     {
         LIST_4("rhs_100Rnd_762x54mmR")
