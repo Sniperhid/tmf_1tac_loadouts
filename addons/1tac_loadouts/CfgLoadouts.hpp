@@ -3,6 +3,7 @@ class CfgLoadouts
 	class CN_PLA_TYPE07_WDL
 	{
 		displayName = "CN People's Liberation Army (Type 07 Woodland)";
+		category = "Eastern Factions";
 		#include "loadouts\cn_pla_type07_wdl.hpp"
 	};
 	class GB_WOOD_1985
