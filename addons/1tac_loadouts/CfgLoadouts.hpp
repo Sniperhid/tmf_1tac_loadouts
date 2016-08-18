@@ -1,5 +1,10 @@
 class CfgLoadouts
 {
+	class CN_PLA_TYPE07_WDL
+	{
+		displayName = "CN People's Liberation Army (Type 07 Woodland)";
+		#include "loadouts\cn_pla_type07_wdl.hpp"
+	};
 	class GB_WOOD_1985
 	{
 		displayName = "GB Woodland DPM (1985)";
