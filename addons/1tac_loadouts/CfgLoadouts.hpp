@@ -42,6 +42,12 @@ class CfgLoadouts
 		category = "UK";
 		#include "loadouts\gb_des_2000.hpp"
 	};
+	class GB_MTP_2015
+	{
+		displayName = "GB MTP (2015)";
+		category = "UK";
+		#include "loadouts\gb_mtp_2015.hpp"
+	};
 	class US_ARMY_AIRBORNE_OCP
 	{
 		displayName = "US Army Airborne (OCP)";

@@ -4,11 +4,11 @@
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
- 	uniform[] = {"CUP_U_B_BAF_DDPM_S1_RolledUp"};
+ 	uniform[] = {"CUP_U_B_BAF_MTP_S3_RolledUp","CUP_U_B_BAF_MTP_S4_UnRolled","CUP_U_B_BAF_MTP_S5_UnRolled"};
    	vest[] = {};
    	backpack[] = {};
    	headgear[] = {};
-   	goggles[] = {"CUP_FR_NeckScarf"};
+   	goggles[] = {"CUP_FR_NeckScarf","rhs_googles_black"};
    	hmd[] = {};
     // Leave empty to remove all. "Default" > leave original item.
 
@@ -50,13 +50,13 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    headgear[] = {"CUP_H_BAF_Helmet_1_DDPM"};
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
-    backpack[] = {"1T_B_Para_DPM"};
-    primaryWeapon[] = {"CUP_arifle_L85A2"};
-	goggles[] = {"CUP_FR_NeckScarf"};
-    scope[] = {"CUP_optic_SUSAT"};
-    attachment[] = {};
+    headgear[] = {"CUP_H_BAF_Helmet_1_MTP"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"};
+    backpack[] = {"B_Kitbag_mcamo"};
+    primaryWeapon[] = {"CUP_arifle_L85A2_G"};
+	goggles[] = {"CUP_FR_NeckScarf","rhs_googles_black"};
+    scope[] = {"CUP_optic_Elcan_reflex"};
+    attachment[] = {"CUP_acc_LLM"};
     magazines[] =
     {
         LIST_11("rhs_mag_30Rnd_556x45_Mk318_Stanag"),
@@ -73,9 +73,10 @@ class r : baseMan
 class g : r
 {
     displayName = "Grenadier";
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Grenadier"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Grenadier"};
     primaryWeapon[] = {"CUP_arifle_L85A2_GL"};
-	scope[] = {"CUP_optic_SUSAT"};
+	scope[] = {"CUP_optic_Elcan_reflex"};
+	attachment[] = {"CUP_acc_LLM"};
     magazines[] +=
     {
         LIST_8("rhs_mag_M441_HE"),
@@ -85,13 +86,13 @@ class g : r
 class car : r
 {
     displayName = "Carabinier";
-    primaryWeapon[] = {"CUP_arifle_L85A2"};
+    primaryWeapon[] = {"CUP_arifle_L85A2_G"};
 };
 class m : car
 {
     displayName = "Medic";
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Medic"};
-	backpack[] = {"1T_B_Para_DPM"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"};
+	backpack[] = {"B_Kitbag_mcamo"};
 	backpackItems[] = {
 		LIST_15("ACE_fieldDressing"),
 		LIST_10("ACE_morphine"),
@@ -103,7 +104,7 @@ class m : car
 class smg : r
 {
     displayName = "Submachinegunner";
-    primaryWeapon[] = {"CUP_arifle_L85A2"};
+    primaryWeapon[] = {"CUP_arifle_L85A2_G"};
     magazines[] =
     {
         LIST_6("rhs_mag_30Rnd_556x45_Mk318_Stanag"),
@@ -114,7 +115,7 @@ class smg : r
 class ftl : g
 {
     displayName = "Fireteam Leader";
-    backpack[] = {"1T_B_Para_DPM"};
+    backpack[] = {"B_Kitbag_mcamo"};
 	magazines[] +=
     {
         LIST_2("rhs_mag_m715_Green"),
@@ -126,12 +127,12 @@ class ftl : g
 class sl : ftl
 {
     displayName = "Squad Leader";
-    sidearmWeapon[] = {"delta_L9A1"};
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Officer"};
-	backpack[] = {"1T_B_Para_DPM"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader"};
+	backpack[] = {"B_Kitbag_mcamo"};
     magazines[] +=
     {
-        LIST_3("delta_mag_13x9mm")
+        LIST_3("rhsusf_mag_17Rnd_9x19_FMJ")
     };
 	items[] += {"ACE_Maptools"};
     linkedItems[] =
@@ -146,9 +147,9 @@ class sl : ftl
 class co : sl
 {
     displayName = "Platoon Leader";
-	backpack[] = {"1T_B_Para_DPM"};
+	backpack[] = {"B_Kitbag_mcamo"};
 	magazines[] = {
-		LIST_3("delta_mag_13x9mm"),
+		LIST_3("rhsusf_mag_17Rnd_9x19_FMJ"),
 		LIST_2("rhs_mag_m715_Green"),
 		LIST_3("rhs_mag_m713_Red"),
 		LIST_2("rhs_mag_m18_green"),
@@ -165,7 +166,7 @@ class co : sl
 class fac : co
 {
     displayName = "Forward Air Controller";
-	backpack[] = {"1T_B_Para_DPM"};
+	backpack[] = {"B_Kitbag_mcamo"};
 	radios[] = {"ACRE_PRC117F"};
 	    magazines[] +=
     {
@@ -189,12 +190,14 @@ class fac : co
 class ar : r
 {
 	displayName = "Automatic Rifleman";
-	primaryWeapon[] = {"CUP_lmg_minimipara"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_MachineGunner"};
+	primaryWeapon[] = {"rhs_weap_m249_pip_S_para"};
+	scope[] = {"rhsusf_acc_ELCAN"};
 	bipod[] = {};
 	magazines[] =
 	{
-		LIST_2("CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1"),
-		LIST_3("CUP_200Rnd_TE1_Red_Tracer_556x45_M249"),
+		LIST_2("rhs_200rnd_556x45_M_SAW"),
+		LIST_3("rhs_200rnd_556x45_T_SAW"),
 		"HandGrenade",
 		"rhs_mag_an_m8hc"
 	};
@@ -204,8 +207,8 @@ class aar : r
     displayName = "Assistant Automatic Rifleman";
     backpackItems[] =
     {
-		LIST_2("CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1"),
-		LIST_3("CUP_200Rnd_TE1_Red_Tracer_556x45_M249"),
+		LIST_2("rhs_200rnd_556x45_M_SAW"),
+		LIST_3("rhs_200rnd_556x45_T_SAW"),
     };
     linkedItems[] += {"Binocular"};
 };
@@ -218,7 +221,9 @@ class mmgg : ar
 {
 	displayName = "MMG Gunner";
 	primaryWeapon[] = {"rhs_weap_m240G"};
-	backpack[] = {"1T_B_Para_DPM"};
+	scope[] = {"rhsusf_acc_ELCAN"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_MachineGunner"};
+	backpack[] = {"B_Kitbag_mcamo"};
 	magazines[] =
 	{
 		LIST_4("rhsusf_100Rnd_762x51"),
@@ -230,7 +235,7 @@ class mmgg : ar
 class mmgac : r
 {
     displayName = "MMG Ammo Carrier";
-    vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
+    vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_MachineGunner"};
 	backpackItems[] =
     {
         LIST_3("rhsusf_100Rnd_762x51")
@@ -239,8 +244,8 @@ class mmgac : r
 class mmgag : aar
 {
 	displayName = "MMG Assistant Gunner";
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
-	backpack[] = {"1T_B_Para_DPM"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader"};
+	backpack[] = {"B_Kitbag_mcamo"};
 	backpackItems[] =
 	{
 		LIST_3("rhsusf_100Rnd_762x51")
@@ -267,7 +272,7 @@ class hmgac : r
 class hmgag : car
 {
 	displayName = "HMG Assistant Gunner";
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader"};
 	backpack[] = {"RHS_M2_MiniTripod_Bag"};
 	linkedItems[] =
 	{
@@ -282,7 +287,7 @@ class matg : car
 {
 	displayName = "MAT Gunner";
 	secondaryWeapon[] = {"rhs_weap_fgm148"};
-	backpack[] = {"1T_B_Para_DPM"};
+	backpack[] = {"B_Kitbag_mcamo"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -297,7 +302,7 @@ class matg : car
 class matac : r
 {
 	displayName = "MAT Ammo Carrier";
-	backpack[] = {"1T_B_Para_DPM"};
+	backpack[] = {"B_Kitbag_mcamo"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -305,8 +310,8 @@ class matac : r
 class matag : car
 {
 	displayName = "MAT Assistant Gunner";
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
-	backpack[] = {"1T_B_Para_DPM"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader"};
+	backpack[] = {"B_Kitbag_mcamo"};
 	backpackItems[] =
 	{
 		LIST_1("rhs_fgm148_magazine_AT")
@@ -333,7 +338,7 @@ class hatac : r
 class hatag : car
 {
 	displayName = "HAT Assistant Gunner";
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"};
 	backPack[] = {"rhs_TOW_Tripod_Bag"};
 	linkedItems[] =
 	{
@@ -359,13 +364,14 @@ class mtrg : car
 class mtrac : r
 {
     displayName = "Mortar Ammo Carrier";
-    backpack[] = {"rhs_M252_Gun_Bag"};
+    backpack[] = {"B_Kitbag_mcamo"};
+	backpack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrag : car
 {
     displayName = "Mortar Assistant Gunner";
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
-	backpack[] = {"rhs_M252_Bipod_Bag"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"};
+    backpack[] = {"rhs_M252_Bipod_Bag"};
     linkedItems[] =
     {
         "ItemMap",
@@ -403,19 +409,19 @@ class samag : car
 class sn : r
 {
     displayName = "Sniper";
-    uniform[] = {"CUP_U_B_BAF_DDPM_S1_RolledUp"};
-    vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Scout"};
-    headgear[] = {"CUP_H_BAF_Helmet_1_DDPM"};
-    goggles[] = {"CUP_FR_NeckScarf"};
-    primaryWeapon[] = {"CUP_srifle_AWM_des"};
+    uniform[] = {"CUP_U_B_BAF_MTP_S5_UnRolled"};
+    vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader"};
+    headgear[] = {"CUP_H_BAF_Helmet_1_MTP"};
+    goggles[] = {"CUP_FR_NeckScarf","rhs_googles_black"};
+    primaryWeapon[] = {"CUP_srifle_AWM_wdl"};
     scope[] = {"optic_LRPS"};
 	bipod[] = {"bipod_02_F_blk"};
-    sidearmWeapon[] = {"delta_L9A1"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
     magazines[] =
     {
         LIST_9("CUP_5Rnd_86x70_L115A1"),
         LIST_2("HandGrenade"),
-        LIST_4("delta_mag_13x9mm")
+        LIST_4("rhsusf_mag_17Rnd_9x19_FMJ")
     };
 	backpack[] = {};
 	linkedItems[] += {"ACE_Vector","ItemGPS"};
@@ -425,7 +431,7 @@ class sp : sn
 {
     displayName = "Spotter";
     primaryWeapon[] = {"CUP_arifle_L85A2_GL"};
-	scope[] = {"CUP_optic_SUSAT"};
+	scope[] = {"CUP_optic_Elcan_reflex"};
     magazines[] =
     {
 		LIST_7("rhs_mag_30Rnd_556x45_Mk318_Stanag"),
@@ -434,17 +440,17 @@ class sp : sn
         LIST_2("rhs_mag_an_m8hc"),
         LIST_4("rhs_mag_M441_HE"),
         LIST_4("rhs_mag_m714_White"),
-		LIST_4("delta_mag_13x9mm")
+		LIST_4("rhsusf_mag_17Rnd_9x19_FMJ")
     };
 };
 class vc : smg
 {
     displayName = "Vehicle Commander";
-    uniform[] = {"CUP_U_B_BAF_DDPM_S1_RolledUp"};
-    vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
-    backpack[] = {"1T_B_Para_DPM"};
+    uniform[] = {"CUP_U_B_BAF_MTP_S6_UnRolled"};
+    vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"};
+    backpack[] = {"B_Kitbag_mcamo"};
 	radios[] = {"ACRE_PRC117F"};
-    headgear[] = {"CUP_H_BAF_Crew_Helmet_DDPM"};
+    headgear[] = {"CUP_H_BAF_Crew_Helmet_MTP"};
     linkedItems[] += {"Binocular","ItemGPS"};
 	magazines[] += {
 		LIST_2("rhs_mag_m715_Green")
@@ -453,10 +459,10 @@ class vc : smg
 class vd : smg
 {
     displayName = "Vehicle Driver";
-    uniform[] = {"CUP_U_B_BAF_DDPM_S1_RolledUp"};
-    vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
-    backpack[] = {"1T_B_Para_DPM"};
-    headgear[] = {"CUP_H_BAF_Crew_Helmet_DDPM"};
+    uniform[] = {"CUP_U_B_BAF_MTP_S6_UnRolled"};
+    vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"};
+    backpack[] = {"B_Kitbag_mcamo"};
+    headgear[] = {"CUP_H_BAF_Crew_Helmet_MTP"};
     linkedItems[] += {"ItemGPS"};
     backpackItems[] = {"ToolKit"};
 };
@@ -469,8 +475,8 @@ class vg : vd
 class pp : smg
 {
     displayName = "Helicopter Pilot";
-    uniform[] = {"CUP_U_B_BAF_DDPM_S1_RolledUp"};
-    vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Pilot"};
+    uniform[] = {"U_B_HeliPilotCoveralls"};
+    vest[] = {"CUP_V_B_PilotVest"};
     headgear[] = {"H_PilotHelmetHeli_O"};
     goggles[] = {"default"};
     linkedItems[] += {"ItemGPS"};
@@ -482,10 +488,10 @@ class pp : smg
 class pcc : smg
 {
     displayName = "Helicopter Crew Chief";
-    uniform[] = {"CUP_U_B_BAF_DDPM_S1_RolledUp"};
-    vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Pilot"};
+    uniform[] = {"U_B_HeliPilotCoveralls"};
+    vest[] = {"CUP_V_B_PilotVest"};
     headgear[] = {"H_PilotHelmetHeli_O"};
-	backpack[] = {"1T_B_Para_DPM"};
+	backpack[] = {"B_Kitbag_mcamo"};
     goggles[] = {"default"};
     linkedItems[] += {"ItemGPS"};
     backpackItems[] = {"ToolKit"};
@@ -503,12 +509,13 @@ class jp : baseMan
 {
     displayName = "Jet pilot";
     uniform[] = {"U_I_pilotCoveralls"};
-    headgear[] = {"MNP_Helmet_Dslyecxi"};
+    headgear[] = {"RHS_jetpilot_usaf"};
+	backpack[] = {"B_Parachute"};
     goggles[] = {"default"};
-	sidearmWeapon[] = {"delta_L9A1"};
+	sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
     magazines[] =
     {
-        LIST_4("delta_mag_13x9mm")
+        LIST_4("rhsusf_mag_17Rnd_9x19_FMJ")
     };
 	items[] =
 	{
@@ -520,7 +527,7 @@ class jp : baseMan
 class eng : car
 {
     displayName = "Combat Engineer (Explosives)";
-    vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
+    vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"};
     magazines[] +=
     {
         LIST_4("ClaymoreDirectionalMine_Remote_Mag")
@@ -536,7 +543,7 @@ class eng : car
 class engm : car
 {
     displayName = "Combat Engineer (AP Mines)";
-    vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
+    vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"};
     items[] +=
     {
         LIST_2("APERSBoundingMine_Range_Mag"),
@@ -554,6 +561,6 @@ class UAV : car
 {
     displayName = "UAV Operator";
     backpack[] = {"B_rhsusf_B_BACKPACK"};
-	vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
+	vest[] = {"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"};
     linkedItems[] += {"B_UavTerminal"};
 };
