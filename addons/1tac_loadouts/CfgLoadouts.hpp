@@ -154,6 +154,12 @@ class CfgLoadouts
 	{
 		displayName = "Takistani Insurgents";
 		category = "Armaverse Factions";
-		#include "loadouts\Tk_Ins.hpp"
+		#include "loadouts\tk_ins.hpp"
+	};
+	class UA_VDV_TTSKO
+	{
+		displayName = "UA Airborne Troops (TTsKO)";
+		category = "Eastern Factions";
+		#include "loadouts\ua_vdv_ttsko.hpp"
 	};
 };
