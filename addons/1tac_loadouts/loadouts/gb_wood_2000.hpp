@@ -359,7 +359,6 @@ class mtrg : car
 class mtrac : r
 {
     displayName = "Mortar Ammo Carrier";
-    backpack[] = {"1T_B_Para_DPM"};
 	backpack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrag : car
