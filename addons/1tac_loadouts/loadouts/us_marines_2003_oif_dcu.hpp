@@ -1,6 +1,6 @@
 /* assignGear specific macros */
 
-// dependencies: US military mod, RHS USF, CUP weapons + units, HLC m60 + m14
+// dependencies: US military mod, RHS USF, CUP weapons + units, HLC m60 + m14, mbg_m16a2
 // originally by Snippers
 
 /* HEAVY BACKPACK - B_Carryall_oli */
@@ -57,7 +57,7 @@ class r : baseMan
     headgear[] = {"usm_helmet_pasgt_dcu","usm_helmet_pasgt_g_dcu"};
 	vest[] = {"usm_vest_pasgt_lbv_rmp"};
     backpack[] = {};
-    primaryWeapon[] = {"CUP_arifle_M16A2"};
+    primaryWeapon[] = {"mbg_m16a2"};
     scope[] = {};
     attachment[] = {};
     magazines[] =
@@ -87,7 +87,7 @@ class g : r
 class car : r
 {
     displayName = "Carabinier";
-    primaryWeapon[] = {"rhs_weap_m4_carryhandle"};
+    primaryWeapon[] = {"mbg_m16a2"};
 };
 class m : car
 {

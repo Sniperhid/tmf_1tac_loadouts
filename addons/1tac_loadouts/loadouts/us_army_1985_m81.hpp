@@ -1,6 +1,7 @@
 /* assignGear specific macros */
 
-// dependencies: US military mod, RHS USF, CUP weapons + units, HLC m60 + m14
+// this is now 1986! science!
+// dependencies: US military mod, RHS USF, CUP weapons + units, HLC m60 + m14, mbg_m16a2
 // originally by Fingers
 
 class baseMan {// Weaponless baseclass
@@ -54,7 +55,7 @@ class r : baseMan
     headgear[] = {"usm_helmet_pasgt_w","usm_helmet_pasgt_g_w"};
 	vest[] = {"usm_vest_pasgt_lbe_rm"};
     backpack[] = {};
-    primaryWeapon[] = {"rhs_weap_m16a4_carryhandle"};
+    primaryWeapon[] = {"mbg_m16a2"};
     scope[] = {};
     attachment[] = {};
     magazines[] =
@@ -84,7 +85,7 @@ class g : r
 class car : r
 {
     displayName = "Carabinier";
-    primaryWeapon[] = {"rhs_weap_m16a4_carryhandle"};
+    primaryWeapon[] = {"mbg_m16a2"};
 };
 class m : car
 {
