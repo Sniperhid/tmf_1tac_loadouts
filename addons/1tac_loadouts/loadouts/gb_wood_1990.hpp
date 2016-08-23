@@ -221,6 +221,7 @@ class mmgg : ar
 		LIST_2("rhsusf_100Rnd_762x51_m62_tracer"),
 		"HandGrenade",
 		"rhs_mag_an_m8hc"
+	};
 };
 class mmgac : r
 {

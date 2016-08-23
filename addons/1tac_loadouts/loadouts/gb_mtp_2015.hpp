@@ -307,6 +307,7 @@ class matac : r
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
 	};
+};
 class matag : car
 {
 	displayName = "MAT Assistant Gunner";
