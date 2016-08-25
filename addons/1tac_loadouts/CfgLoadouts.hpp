@@ -78,6 +78,12 @@ class CfgLoadouts
 		category = "USA";
 		#include "loadouts\us_army_1985_m81.hpp"
 	};
+	class US_MARINES_1990_DBDU
+	{
+		displayName = "US Marines (1990, DBDU)";
+		category = "USA";
+		#include "loadouts\us_marines_1990_dbdu.hpp"
+	};
 	class US_MARINES_2003_OIF_DCU
 	{
 		displayName = "US Marines (2003 OIF, DCU)";
