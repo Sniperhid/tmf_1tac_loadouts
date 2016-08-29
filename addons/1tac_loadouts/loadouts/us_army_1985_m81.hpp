@@ -273,20 +273,20 @@ class hmgag : car
 class matg : car
 {
 	displayName = "MAT Gunner";
-	backPack[] = {"usm_pack_alice"};
+	backpack[] = {"B_Carryall_oli"};
 	secondaryWeapon[] = {"CUP_launch_M47"};
 	backpackItems[] += {"CUP_Dragon_EP1_M"};
 };
 class matac : r
 {
 	displayName = "MAT Ammo Carrier";
-	backPack[] = {"usm_pack_alice"};
+	backpack[] = {"B_Carryall_oli"};
 	backpackItems[] += {"CUP_Dragon_EP1_M"};
 };
 class matag : car
 {
 	displayName = "MAT Assistant Gunner";
-	backPack[] = {"usm_pack_alice"};
+	backpack[] = {"B_Carryall_oli"};
 	linkedItems[] =
 	{
 		"ItemMap",
@@ -300,6 +300,7 @@ class hatg : car
 {
     displayName = "HAT Gunner";
 	secondaryWeapon[] = {"rhs_weap_fgm148"};
+	backpack[] = {"B_Carryall_oli"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -308,6 +309,7 @@ class hatg : car
 class hatac : r
 {
 	displayName = "HAT Ammo Carrier";
+	backpack[] = {"B_Carryall_oli"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -316,6 +318,7 @@ class hatac : r
 class hatag : car
 {
 	displayName = "HAT Assistant Gunner";
+	backpack[] = {"B_Carryall_oli"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -362,15 +365,17 @@ class mtrag : car
 class samg : car
 {
     displayName = "AA Missile Specialist";
+	backpack[] = {"B_Carryall_oli"};
     secondaryWeapon[] = {"rhs_weap_fim92"};
     magazines[] +=
     {
-        LIST_3("rhs_fim92_mag")
+        LIST_2("rhs_fim92_mag")
     };
 };
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
+	backpack[] = {"B_Carryall_oli"};
     linkedItems[] =
     {
         "ItemMap",
@@ -397,7 +402,7 @@ class sn : r
     sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] =
     {
-        LIST_8("CUP_5Rnd_762x51_M24"),
+        LIST_8("hlc_20Rnd_762x51_mk316_M14"),
         LIST_2("HandGrenade"),
         LIST_4("rhsusf_mag_15Rnd_9x19_FMJ")
     };
@@ -473,7 +478,7 @@ class pcc : smg
 class pc : pcc
 {
     displayName = "Helicopter Crew";
-	backpack[] = {;
+	backpack[] = {};
     backpackItems[] = {};
 };
 class jp : baseMan
@@ -499,6 +504,7 @@ class eng : car
 {
     displayName = "Combat Engineer (Explosives)";
     //vest[] = {"rhsusf_iotv_ucp_Repair"};
+	backpack[] = {"B_Carryall_oli"};
     magazines[] +=
     {
         LIST_4("ClaymoreDirectionalMine_Remote_Mag")
