@@ -363,14 +363,16 @@ class samg : car
 {
     displayName = "AA Missile Specialist";
     secondaryWeapon[] = {"rhs_weap_fim92"};
+	backpack[] = {"B_Carryall_cbr"};
     magazines[] +=
     {
-        LIST_3("rhs_fim92_mag")
+        LIST_2("rhs_fim92_mag")
     };
 };
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
+	backpack[] = {"B_Carryall_cbr"};
     linkedItems[] =
     {
         "ItemMap",
@@ -518,8 +520,12 @@ class eng : car
     uniform[] = {"usm_bdu_w_m"};
     vest[] = {"usm_vest_pasgtdes_lbe_rm_m"};
 	backpack[] = {"usm_pack_alice"};
-    magazines[] +=
+    magazines[] =
     {
+		LIST_6("30Rnd_556x45_Stanag"),
+        LIST_2("30Rnd_556x45_Stanag_Tracer_Red"),
+        LIST_2("HandGrenade"),
+        LIST_2("SmokeShell"),
         LIST_4("ClaymoreDirectionalMine_Remote_Mag")
     };
     backpackItems[] = {

@@ -91,6 +91,13 @@ class car : r
 {
     displayName = "Carabinier";
     primaryWeapon[] = {"hlc_rifle_aks74"};
+	magazines[] =
+    {
+        LIST_6("rhs_30Rnd_545x39_7N10_AK"),
+        LIST_2("rhs_30Rnd_545x39_AK_green"),
+        LIST_2("rhs_mag_rgd5"),
+        LIST_2("rhs_mag_rdg2_white")
+    };
 };
 class m : car 
 {
@@ -238,7 +245,7 @@ class mmgg : ar
 	displayName = "MMG Gunner";
 	primaryWeapon[] = {"rhs_weap_pkm"};
 	sidearmWeapon[] = {};
-	backpack[] = {"rhs_sidor"};
+	backpack[] = {"bear_rd54_sand"};
 	scope[] = {};
 	magazines[] =
 	{
@@ -252,7 +259,7 @@ class mmgac : r
 {
     displayName = "MMG Ammo Carrier";
 	vest[] = {"rhsgref_6b23_ttsko_mountain_rifleman","rhsgref_6b23_ttsko_forest_rifleman"};
-	backpack[] = {"rhs_sidor"};
+	backpack[] = {"bear_rd54_sand"};
     backpackItems[] =
     {
         LIST_4("rhs_100Rnd_762x54mmR")
@@ -261,6 +268,7 @@ class mmgac : r
 class mmgag : aar
 {
 	displayName = "MMG Assistant Gunner";
+	backpack[] = {"bear_rd54_sand"};
 	linkedItems[] =
 	{
 		"ItemMap",
@@ -280,7 +288,7 @@ class hmgg : car
     backPack[] = {"RHS_Kord_Gun_Bag"};
 
 };
-class hmgac : r
+class hmgac : car
 {
     displayName = "HMG Ammo Carrier";
     backPack[] = {"RHS_Kord_Gun_Bag"};
@@ -310,7 +318,7 @@ class matg : car
 		LIST_2("rhs_rpg7_PG7VL_mag")
 	};
 };
-class matac : r
+class matac : car
 {
 	displayName = "MAT Ammo Carrier";
     backpack[] = {"rhs_rpg"};
@@ -347,7 +355,7 @@ class hatg : car
 	secondaryWeapon[] = {};
 	backpackItems[] = {};
 };
-class hatac : r
+class hatac : car
 {
 	displayName = "HAT Ammo Carrier";
 	backpack[] = {"RHS_Metis_Gun_Bag"};
@@ -380,7 +388,7 @@ class mtrg : car
         "ItemGPS"
     };
 };
-class mtrac : r
+class mtrac : car
 {
     displayName = "Mortar Ammo Carrier";
     backPack[] = {"RHS_Podnos_Gun_Bag"};
@@ -403,7 +411,7 @@ class samg : car
 {
     displayName = "AA Missile Specialist";
     secondaryWeapon[] = {"rhs_weap_igla"};
-	backpack[] = {"rhs_rpg"};
+	backpack[] = {"bear_rd54_sand"};
     magazines[] +=
     {
         LIST_2("rhs_mag_9k38_rocket")
@@ -412,7 +420,7 @@ class samg : car
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
-	backpack[] = {"rhs_rpg"};
+	backpack[] = {"bear_rd54_sand"};
     linkedItems[] =
     {
         "ItemMap",
@@ -460,13 +468,12 @@ class sp : sn
 	};
     magazines[] =
     {
-		LIST_7("rhs_30Rnd_545x39_7N10_AK"),
+		LIST_4("rhs_30Rnd_545x39_7N10_AK"),
         LIST_2("rhs_30Rnd_545x39_AK_green"),
-        LIST_2("rhs_mag_rgd5"),
         LIST_2("rhs_mag_rdg2_white"),
-        LIST_4("rhs_VOG25"),
-        LIST_4("rhs_GRD40_White"),
-		LIST_4("rhs_mag_9x18_12_57N181S")
+        LIST_3("rhs_VOG25"),
+        LIST_3("rhs_GRD40_White"),
+		LIST_3("rhs_mag_9x18_12_57N181S")
     };
 };
 class vc : smg
@@ -554,7 +561,7 @@ class eng : car
 {
     displayName = "Combat Engineer (Explosives)";
     vest[] = {"rhsgref_6b23_ttsko_mountain_rifleman","rhsgref_6b23_ttsko_forest_rifleman"};
-	backpack[] = {"rhs_sidor"};
+	backpack[] = {"B_Carryall_oli"};
     backpackItems[] = {
         "MineDetector",
         "ToolKit",

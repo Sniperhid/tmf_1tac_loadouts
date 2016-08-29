@@ -84,6 +84,13 @@ class car : r
 {
     displayName = "Carabinier";
     primaryWeapon[] = {"rhs_weap_m21s_pr"};
+	magazines[] =
+    {
+        LIST_6("rhsgref_30rnd_556x45_m21"),
+        LIST_2("rhsgref_30rnd_556x45_m21_t"),
+        LIST_2("rhs_mag_rgd5"),
+        LIST_2("rhs_mag_rdg2_white")
+    };
 };
 class m : car 
 {
@@ -101,6 +108,13 @@ class smg : r
     displayName = "Submachinegunner";
     primaryWeapon[] = {"rhs_weap_m21s_fold"};
 	scope[] = {};
+	magazines[] =
+    {
+        LIST_6("rhsgref_30rnd_556x45_m21"),
+        LIST_2("rhsgref_30rnd_556x45_m21_t"),
+        LIST_2("rhs_mag_rgd5"),
+        LIST_2("rhs_mag_rdg2_white")
+    };
 };
 class ftl : r
 {
@@ -212,7 +226,7 @@ class dm : r
 class mmgg : ar
 {
 	displayName = "MMG Gunner";
-	backpack[] = {"rhsusf_falconii"};
+	backpack[] = {"B_FieldPack_oli"};
 	primaryWeapon[] = {"rhs_weap_m240G"};
 	sidearmWeapon[] = {};
 	scope[] = {};
@@ -254,7 +268,7 @@ class hmgg : car
     backPack[] = {"RHS_Kord_Gun_Bag"};
 
 };
-class hmgac : r
+class hmgac : car
 {
     displayName = "HMG Ammo Carrier";
     backPack[] = {"RHS_Kord_Gun_Bag"};
@@ -320,7 +334,7 @@ class hatg : car
 	secondaryWeapon[] = {};
 	backpackItems[] = {};
 };
-class hatac : r
+class hatac : car
 {
 	displayName = "HAT Ammo Carrier";
 	backpack[] = {"RHS_Kornet_Gun_Bag"};
@@ -352,7 +366,7 @@ class mtrg : car
         "ItemGPS"
     };
 };
-class mtrac : r
+class mtrac : car
 {
     displayName = "Mortar Ammo Carrier";
     backPack[] = {"RHS_Podnos_Gun_Bag"};
@@ -374,7 +388,7 @@ class samg : car
 {
     displayName = "AA Missile Specialist";
     secondaryWeapon[] = {"rhs_weap_igla"};
-	backpack[] = {"rhs_rpg"};
+	backpack[] = {"bear_carryall_lizard"};
     magazines[] +=
     {
         LIST_2("rhs_mag_9k38_rocket")
@@ -383,7 +397,7 @@ class samg : car
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
-	backpack[] = {"rhs_rpg"};
+	backpack[] = {"bear_carryall_lizard"};
     linkedItems[] =
     {
         "ItemMap",

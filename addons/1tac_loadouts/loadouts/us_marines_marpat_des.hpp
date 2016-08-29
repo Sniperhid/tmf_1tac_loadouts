@@ -92,6 +92,13 @@ class g : r
 class car : r
 {
     displayName = "Carabinier";
+	magazines[] =
+    {
+        LIST_7("30Rnd_556x45_Stanag"),
+        LIST_2("30Rnd_556x45_Stanag_Tracer_Red"),
+        LIST_2("HandGrenade"),
+        LIST_2("SmokeShell")
+    };
     //primaryWeapon[] = {"rhs_weap_m4a1_carryhandle"};
 };
 class m : car
@@ -294,7 +301,7 @@ class matg : car
 	secondaryAttachments[] = {"rhs_weap_optic_smaw"};
 	magazines[] +=
 	{
-		LIST_2("rhs_mag_smaw_HEAA"),
+		"rhs_mag_smaw_HEAA",
 		"rhs_mag_smaw_HEDP",
 		LIST_5("rhs_mag_smaw_SR")
 	};
@@ -333,14 +340,16 @@ class hatg : car
 {
     displayName = "HAT Gunner";
 	secondaryWeapon[] = {"rhs_weap_fgm148"};
+	backpack[] = {"B_Carryall_cbr"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
 	};
 };
-class hatac : r
+class hatac : car
 {
 	displayName = "HAT Ammo Carrier";
+	backpack[] = {"B_Carryall_cbr"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -350,6 +359,7 @@ class hatag : car
 {
 	displayName = "HAT Assistant Gunner";
 	vest[] = {"rhsusf_spc_squadleader"};
+	backpack[] = {"B_Carryall_cbr"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -397,14 +407,16 @@ class samg : car
 {
     displayName = "AA Missile Specialist";
     secondaryWeapon[] = {"rhs_weap_fim92"};
+	backpack[] = {"B_Carryall_cbr"};
     magazines[] +=
     {
-        LIST_3("rhs_fim92_mag")
+        LIST_2("rhs_fim92_mag")
     };
 };
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
+	backpack[] = {"B_Carryall_cbr"};
     linkedItems[] =
     {
         "ItemMap",
@@ -539,7 +551,7 @@ class eng : car
 {
     displayName = "Combat Engineer (Explosives)";
     vest[] = {"rhsusf_spc_rifleman"};
-    backpack[] = {"rhsusf_assault_eagleaiii_coy"};
+    backpack[] = {"B_Carryall_cbr"};
     magazines[] +=
     {
         LIST_4("ClaymoreDirectionalMine_Remote_Mag")
@@ -556,6 +568,7 @@ class engm : car
 {
     displayName = "Combat Engineer (Mines)";
     vest[] = {"rhsusf_spc_rifleman"};
+	backpack[] = {"B_Carryall_cbr"};
     items[] +=
     {
         LIST_2("APERSBoundingMine_Range_Mag"),

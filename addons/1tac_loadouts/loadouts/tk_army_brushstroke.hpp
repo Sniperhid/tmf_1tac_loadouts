@@ -194,7 +194,7 @@ class rat : car
 {
     displayName = "Rifleman (AT)";
     secondaryWeapon[] = {"rhs_weap_rpg7"};
-    secondaryAttachments[] = {"rhs_rpg7_PG7VL_mag"};
+	magazines[] += {"rhs_rpg7_PG7VL_mag"};
 };
 class dm : r
 {
@@ -272,9 +272,8 @@ class hmgag : car
 class matg : car
 {
 	displayName = "MAT Gunner";
-	backpack[] = {"rhs_rpg_empty"};
+	backpack[] = {"bear_carryall_lizard"};
 	secondaryWeapon[] = {"CUP_launch_M47"};
-	secondaryAttachments[] = {"CUP_Dragon_EP1_M"};
 	magazines[] +=
 	{
 		"CUP_Dragon_EP1_M"
@@ -283,7 +282,7 @@ class matg : car
 class matac : r
 {
 	displayName = "MAT Ammo Carrier";
-	backpack[] = {"rhs_rpg_empty"};
+	backpack[] = {"bear_carryall_lizard"};
 	backpackItems[] =
 	{
 		"CUP_Dragon_EP1_M"
@@ -292,7 +291,7 @@ class matac : r
 class matag : car
 {
 	displayName = "MAT Assistant Gunner";
-	backpack[] = {"rhs_rpg_empty"};
+	backpack[] = {"bear_carryall_lizard"};
 	linkedItems[] =
 	{
 		"ItemMap",
@@ -373,7 +372,6 @@ class samg : car
     displayName = "AA Missile Specialist";
     backPack[] = {"rhs_rpg_empty"};
     secondaryWeapon[] = {"rhs_weap_fim92"};
-	secondaryAttachments[] = {"rhs_fim92_mag"};
     magazines[] +=
     {
         "rhs_fim92_mag"
@@ -508,6 +506,7 @@ class jp : baseMan
 class eng : car
 {
     displayName = "Combat Engineer (Explosives)";
+	backpack[] = {"bear_rd54_sand"};
     magazines[] +=
     {
         LIST_4("ClaymoreDirectionalMine_Remote_Mag")
@@ -523,6 +522,7 @@ class eng : car
 class engm : car
 {
     displayName = "Combat Engineer (Mines)";
+	backpack[] = {"bear_rd54_sand"};
     items[] +=
     {
         LIST_2("APERSBoundingMine_Range_Mag"),

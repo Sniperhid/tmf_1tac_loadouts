@@ -378,7 +378,7 @@ class samg : car
     secondaryWeapon[] = {"rhs_weap_fim92"};
     magazines[] +=
     {
-        LIST_3("rhs_fim92_mag")
+        LIST_2("rhs_fim92_mag")
     };
 };
 class samag : car
@@ -425,13 +425,13 @@ class sp : sn
 	scope[] = {};
     magazines[] =
     {
-		LIST_7("rhs_mag_30Rnd_556x45_Mk318_Stanag"),
+		LIST_5("rhs_mag_30Rnd_556x45_Mk318_Stanag"),
         LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
         LIST_2("HandGrenade"),
         LIST_2("rhs_mag_an_m8hc"),
-        LIST_4("rhs_mag_M441_HE"),
-        LIST_4("rhs_mag_m714_White"),
-		LIST_4("delta_mag_13x9mm")
+        LIST_3("rhs_mag_M441_HE"),
+        LIST_3("rhs_mag_m714_White"),
+		LIST_3("delta_mag_13x9mm")
     };
 };
 class vc : smg
@@ -500,7 +500,7 @@ class jp : baseMan
 {
     displayName = "Jet pilot";
     uniform[] = {"U_I_pilotCoveralls"};
-    headgear[] = {"MNP_Helmet_Dslyecxi"};
+    headgear[] = {"RHS_jetpilot_usaf"};
     goggles[] = {"default"};
 	sidearmWeapon[] = {"delta_L9A1"};
     magazines[] =

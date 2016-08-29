@@ -208,7 +208,7 @@ class aar : r
     backpackItems[] =
     {
 		LIST_2("rhs_200rnd_556x45_M_SAW"),
-		LIST_3("rhs_200rnd_556x45_T_SAW"),
+		LIST_2("rhs_200rnd_556x45_T_SAW"),
     };
     linkedItems[] += {"Binocular"};
 };
@@ -287,7 +287,7 @@ class matg : car
 {
 	displayName = "MAT Gunner";
 	secondaryWeapon[] = {"rhs_weap_fgm148"};
-	backpack[] = {"B_Kitbag_mcamo"};
+	backpack[] = {"B_Carryall_cbr"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -302,7 +302,7 @@ class matg : car
 class matac : r
 {
 	displayName = "MAT Ammo Carrier";
-	backpack[] = {"B_Kitbag_mcamo"};
+	backpack[] = {"B_Carryall_cbr"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -387,7 +387,7 @@ class samg : car
     secondaryWeapon[] = {"rhs_weap_fim92"};
     magazines[] +=
     {
-        LIST_3("rhs_fim92_mag")
+        LIST_2("rhs_fim92_mag")
     };
 };
 class samag : car

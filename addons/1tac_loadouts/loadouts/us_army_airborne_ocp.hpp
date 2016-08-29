@@ -81,6 +81,13 @@ class g : r
 class car : r
 {
     displayName = "Carabinier";
+	magazines[] =
+    {
+        LIST_8("30Rnd_556x45_Stanag"),
+        LIST_2("30Rnd_556x45_Stanag_Tracer_Red"),
+        LIST_2("HandGrenade"),
+        LIST_2("SmokeShell")
+    };
     //primaryWeapon[] = {"rhs_weap_m4a1_carryhandle"};
 };
 class m : car
@@ -287,15 +294,17 @@ class matg : car
 	displayName = "MAT Gunner";
 	secondaryWeapon[] = {"rhs_weap_smaw_green"};
 	secondaryAttachments[] = {"rhs_weap_optic_smaw"};
+	backpack[] = {"B_Carryall_oli"};
 	magazines[] +=
 	{
-		LIST_3("rhs_mag_smaw_HEDP"),
+		LIST_2("rhs_mag_smaw_HEDP"),
 		LIST_3("rhs_mag_smaw_SR")
 	};
 };
 class matac : r
 {
 	displayName = "MAT Ammo Carrier";
+	backpack[] = {"B_Carryall_oli"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_mag_smaw_HEDP"),
@@ -305,6 +314,7 @@ class matac : r
 class matag : car
 {
 	displayName = "MAT Assistant Gunner";
+	backpack[] = {"B_Carryall_oli"};
 	vest[] = {"rhsusf_spcs_ocp_rifleman"};
 	linkedItems[] =
 	{
@@ -324,6 +334,7 @@ class hatg : car
 {
     displayName = "HAT Gunner";
 	secondaryWeapon[] = {"rhs_weap_fgm148"};
+	backpack[] = {"B_Carryall_oli"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -332,6 +343,7 @@ class hatg : car
 class hatac : r
 {
 	displayName = "HAT Ammo Carrier";
+	backpack[] = {"B_Carryall_oli"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -341,6 +353,7 @@ class hatag : car
 {
 	displayName = "HAT Assistant Gunner";
 	vest[] = {"rhsusf_spcs_ocp_rifleman"};
+	backpack[] = {"B_Carryall_oli"};
 	backpackItems[] =
 	{
 		LIST_2("rhs_fgm148_magazine_AT")
@@ -389,14 +402,16 @@ class samg : car
 {
     displayName = "AA Missile Specialist";
     secondaryWeapon[] = {"rhs_weap_fim92"};
+	backpack[] = {"B_Carryall_oli"};
     magazines[] +=
     {
-        LIST_3("rhs_fim92_mag")
+        LIST_2("rhs_fim92_mag")
     };
 };
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
+	backpack[] = {"B_Carryall_oli"};
     linkedItems[] =
     {
         "ItemMap",
@@ -530,9 +545,12 @@ class eng : car
 {
     displayName = "Combat Engineer (Explosives)";
     vest[] = {"rhsusf_spcs_ocp_rifleman"};
-    backpack[] = {"rhsusf_assault_eagleaiii_ocp"};
-    magazines[] +=
+    backpack[] = {"B_Carryall_oli"};
+    magazines[] =
     {
+        LIST_5("30Rnd_556x45_Stanag"),
+        LIST_2("30Rnd_556x45_Stanag_Tracer_Red"),
+        LIST_2("SmokeShell"),		
         LIST_4("ClaymoreDirectionalMine_Remote_Mag")
     };
     backpackItems[] = {
