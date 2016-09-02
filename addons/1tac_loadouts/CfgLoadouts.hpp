@@ -72,6 +72,12 @@ class CfgLoadouts
 		category = "USA";
 		#include "loadouts\us_marsoc_m81.hpp"
 	};
+	class US_ARMY_1970_ODGREEN
+	{
+		displayName = "US Army (1970, OD GREEN)";
+		category = "USA";
+		#include "loadouts\us_army_1970_odgreen.hpp"
+	};
 	class US_ARMY_1985_M81
 	{
 		displayName = "US Army (1985, M81)";
