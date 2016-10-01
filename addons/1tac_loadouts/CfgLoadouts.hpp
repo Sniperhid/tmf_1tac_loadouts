@@ -180,4 +180,16 @@ class CfgLoadouts
 		category = "Eastern Factions";
 		#include "loadouts\ua_vdv_ttsko.hpp"
 	};
+	class SLA_1980_FELDGRAU
+	{
+		displayName = "SLA (1980, Feldgrau)";
+		category = "Armaverse Factions";
+		#include "loadouts\sla_1980_feldgrau.hpp"
+	};
+	class SLA_1990
+	{
+		displayName = "SLA (1990)";
+		category = "Armaverse Factions";
+		#include "loadouts\sla_1990.hpp"
+	};
 };
