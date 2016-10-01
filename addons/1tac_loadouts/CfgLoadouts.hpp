@@ -6,6 +6,12 @@ class CfgLoadouts
 		category = "Eastern Factions";
 		#include "loadouts\cn_pla_type07_wdl.hpp"
 	};
+	class GB_WOOD_1980
+	{
+		displayName = "GB Woodland DPM (1980)";
+		category = "UK";
+		#include "loadouts\gb_wood_1980.hpp"
+	};
 	class GB_WOOD_1985
 	{
 		displayName = "GB Woodland DPM (1985)";
