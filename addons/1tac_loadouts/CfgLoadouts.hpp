@@ -132,6 +132,12 @@ class CfgLoadouts
 		category = "Russia";
 		#include "loadouts\ru_vdv_emr_ratnik.hpp"
 	};
+	class RUS_VDV_MOUNTAIN_FLORA_RATNIK
+	{
+		displayName = "RU Airborne Mountain Troops (Mountain Flora, Ratnik)";
+		category = "Russia";
+		#include "loadouts\ru_vdv_mountain_flora_ratnik.hpp"
+	};
 	class RUS_VDV_VSR
 	{
 		displayName = "RU Airborne Troops (VSR)";
@@ -191,5 +197,17 @@ class CfgLoadouts
 		displayName = "SLA (1990)";
 		category = "Armaverse Factions";
 		#include "loadouts\sla_1990.hpp"
+	};
+	class GENERIC_PARAMILITARY_OLIVE_M16
+	{
+		displayName = "Generic Paramilitary (Olive, M16s)";
+		category = "Other";
+		#include "loadouts\generic_paramilitary_olive_m16.hpp"
+	};
+	class GENERIC_PARAMILITARY_TIGERSTRIPE_M16
+	{
+		displayName = "Generic Paramilitary (Tigerstripe, M16s)";
+		category = "Other";
+		#include "loadouts\generic_paramilitary_tigerstripe_m16.hpp"
 	};
 };
