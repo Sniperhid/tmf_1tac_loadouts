@@ -7,6 +7,7 @@ This repository for the addon containing 1Tac's loadouts for TMF.
 ### Links of interest
 
 * Team One Tactical (1Tac) - http://www.teamonetactical.com/
+* Teamwork Mission Framework (TMF) - https://github.com/TMF3/TMF
 * TMF Documentation - http://teamonetactical.com/wiki/doku.php?id=tmf:start
 
 ### Credits
