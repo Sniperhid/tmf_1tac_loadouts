@@ -60,6 +60,12 @@ class CfgLoadouts
 		category = "USA";
 		#include "loadouts\us_army_airborne_ocp.hpp"
 	};
+	class US_ARMY_RANGERS_2007_ACU
+	{
+		displayName = "US Army Rangers (2007, ACU)";
+		category = "USA";
+		#include "loadouts\us_army_rangers_2007_acu.hpp"
+	};
 	class US_MARINES_MARPAT_DES
 	{
 		displayName = "US Marines (Desert MARPAT)";
@@ -77,6 +83,12 @@ class CfgLoadouts
 		displayName = "US MARSOC (M81)";
 		category = "USA";
 		#include "loadouts\us_marsoc_m81.hpp"
+	};
+	class US_NSWC_SEAL_AOR2
+	{
+		displayName = "US NSWC SEAL (AOR2)";
+		category = "USA";
+		#include "loadouts\us_nswc_seal_aor2.hpp"
 	};
 	class US_ARMY_1970_ODGREEN
 	{
