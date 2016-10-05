@@ -210,6 +210,12 @@ class CfgLoadouts
 		category = "Armaverse Factions";
 		#include "loadouts\sla_1990.hpp"
 	};
+	class GENERIC_PARAMILITARY_OLIVE_AKM
+	{
+		displayName = "Generic Paramilitary (Olive, AKMs)";
+		category = "Other";
+		#include "loadouts\generic_paramilitary_olive_akm.hpp"
+	};
 	class GENERIC_PARAMILITARY_OLIVE_M16
 	{
 		displayName = "Generic Paramilitary (Olive, M16s)";
@@ -221,5 +227,17 @@ class CfgLoadouts
 		displayName = "Generic Paramilitary (Tigerstripe, M16s)";
 		category = "Other";
 		#include "loadouts\generic_paramilitary_tigerstripe_m16.hpp"
+	};
+	class GDR_NVA_1980_STRICHTARN
+	{
+		displayName = "GDR Army (1980, Strichtarn)";
+		category = "Eastern Factions";
+		#include "loadouts\gdr_nva_1980_strichtarn.hpp"
+	};
+	class AFR_MILITIA
+	{
+		displayName = "African Militia";
+		category = "Other";
+		#include "loadouts\afr_militia.hpp"
 	};
 };
