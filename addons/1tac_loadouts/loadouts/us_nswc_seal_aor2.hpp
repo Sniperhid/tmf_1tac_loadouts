@@ -78,7 +78,7 @@ class r : baseMan
 	{
 		"rhsusf_acc_grip2",
 		"rhsusf_acc_grip3",
-		"Default"
+		""
 	};
     scope[] = 
 	{

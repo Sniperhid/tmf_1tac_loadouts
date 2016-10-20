@@ -58,7 +58,7 @@ class r : baseMan
 	};
 	bipod[] = 
 	{ /* weighted 4/1/3 */
-		"Default","Default","Default","Default",
+		"","","","",
 		"rhsusf_acc_grip1",
 		"rhsusf_acc_grip3","rhsusf_acc_grip3","rhsusf_acc_grip3"
 	};

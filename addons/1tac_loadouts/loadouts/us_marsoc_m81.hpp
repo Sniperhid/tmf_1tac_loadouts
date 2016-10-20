@@ -92,7 +92,7 @@ class r : baseMan
 		"rhsusf_acc_grip2_tan",
 		"rhsusf_acc_grip3",
 		"rhsusf_acc_grip3_tan",
-		"Default"
+		""
 	};
     scope[] = 
 	{
