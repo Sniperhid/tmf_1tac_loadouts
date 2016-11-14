@@ -7,7 +7,7 @@ class baseMan {// Weaponless baseclass
     // All randomized.
  	uniform[] = {"bear_uniform_m88_strichtarn"};
    	vest[] = {};
-   	backpack[] = {"rhs_sidor"};
+   	backpack[] = {"bear_sidor_strichtarn"};
    	headgear[] = {};
    	goggles[] = {"default"};
    	hmd[] = {};
@@ -50,7 +50,7 @@ class r : baseMan
     displayName = "Rifleman";
     headgear[] = {"JO_Helmet_M56"};
 	vest[] = {"bear_6sh46_high_capacity"};
-    backpack[] = {"rhs_sidor"};
+    backpack[] = {"bear_sidor_strichtarn"};
     primaryWeapon[] =
 	{
 		"rhs_weap_akm"
@@ -73,7 +73,7 @@ class r : baseMan
 class g : r
 {
     displayName = "Grenadier";
-	backpack[] = {"rhs_sidor"};
+	backpack[] = {"bear_sidor_strichtarn"};
     primaryWeapon[] = {"rhs_weap_akm_gp25","rhs_weap_akms_gp25"};
     magazines[] =
     {
@@ -201,7 +201,7 @@ class ar : r
 class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
-	backpack[] = {"rhs_sidor"};
+	backpack[] = {"bear_sidor_strichtarn"};
     backpackItems[] =
     {
         LIST_5("hlc_45Rnd_762x39_m_rpk"),
@@ -232,7 +232,7 @@ class mmgg : ar
 	displayName = "MMG Gunner";
 	primaryWeapon[] = {"rhs_weap_pkm"};
 	sidearmWeapon[] = {};
-	backpack[] = {"rhs_sidor"};
+	backpack[] = {"bear_sidor_strichtarn"};
 	scope[] = {};
 	magazines[] =
 	{
@@ -446,7 +446,7 @@ class sp : sn
 class vc : smg
 {
     displayName = "Vehicle Commander";
-    backpack[] = {"rhs_sidor"};
+    backpack[] = {"bear_sidor_strichtarn"};
 	radios[] = {"ACRE_PRC117F"};
     headgear[] = {"rhs_tsh4"};
     goggles[] = {};
@@ -455,7 +455,7 @@ class vc : smg
 class vd : smg
 {
     displayName = "Vehicle Driver";
-    backpack[] = {"rhs_sidor"};
+    backpack[] = {"bear_sidor_strichtarn"};
     headgear[] = {"rhs_tsh4"};
     goggles[] = {};
     backpackItems[] = {"ToolKit"};
@@ -471,7 +471,7 @@ class pp : smg
     displayName = "Helicopter Pilot";
     uniform[] = {"rhs_uniform_df15"};
     vest[] = {"rhs_vydra_3m"};
-    backpack[] = {"rhs_sidor"};
+    backpack[] = {"bear_sidor_strichtarn"};
 	radios[] = {"ACRE_PRC117F"};
     headgear[] = {"rhs_zsh7a_mike"};
     goggles[] = {};
@@ -484,7 +484,7 @@ class pcc : smg
     displayName = "Helicopter Crew Chief";
     uniform[] = {"rhs_uniform_df15"};
     vest[] = {"rhs_vydra_3m"};
-    backpack[] = {"rhs_sidor"};
+    backpack[] = {"bear_sidor_strichtarn"};
     headgear[] = {"rhs_zsh7a"};
     goggles[] = {};
     backpackItems[] = {"ToolKit"};
@@ -502,7 +502,7 @@ class jp : baseMan
     displayName = "Jet pilot";
     uniform[] = {"rhs_uniform_df15"};
     vest[] = {"rhs_vydra_3m"};
-    backpack[] = {"rhs_sidor"};
+    backpack[] = {"bear_sidor_strichtarn"};
 	radios[] = {"ACRE_PRC117F"};
     headgear[] = {"rhs_zsh7a"};
     goggles[] = {};
@@ -548,6 +548,6 @@ class engm : car
 class UAV : car
 {
     displayName = "UAV Operator";
-    backpack[] = {"rhs_sidor"};
+    backpack[] = {"bear_sidor_strichtarn"};
     linkedItems[] += {"O_UavTerminal"};
 };
