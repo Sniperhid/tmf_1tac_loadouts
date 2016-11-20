@@ -159,11 +159,11 @@ class CfgLoadouts
 		#include "loadouts\ru_vdv_vsr.hpp"
 	};
 	
-	class USSR_GROUND_FORCES_1970_KHAKI
+	class USSR_MOTOR_RIFLES_1970_KHAKI
 	{
-		displayName = "USSR Ground Forces (1970, Khaki)";
+		displayName = "USSR Motor Rifles (1970, Khaki)";
 		category = "Eastern Factions";
-		#include "loadouts\ussr_ground_forces_1970_khaki.hpp"
+		#include "loadouts\ussr_motor_rifles_1970_khaki.hpp"
 	};
 	class USSR_MOTOR_RIFLES_1980_KHAKI
 	{
