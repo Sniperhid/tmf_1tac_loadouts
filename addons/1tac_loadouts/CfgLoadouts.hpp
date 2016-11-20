@@ -114,6 +114,7 @@ class CfgLoadouts
 		category = "USA";
 		#include "loadouts\us_marines_2003_oif_dcu.hpp"
 	};
+	
 	/*class US_ARMY
 	{
 		displayName = "US Army (UCP)";
@@ -126,6 +127,7 @@ class CfgLoadouts
 		category = "USA";
 		#include "loadouts\us_army_ocp_rhs_1tac.hpp"
 	};*/
+	
 	class RUS_MSV_EMR
 	{
 		displayName = "RU Ground Forces (EMR)";
@@ -156,12 +158,32 @@ class CfgLoadouts
 		category = "Russia";
 		#include "loadouts\ru_vdv_vsr.hpp"
 	};
+	
+	class USSR_GROUND_FORCES_1970_KHAKI
+	{
+		displayName = "USSR Ground Forces (1970, Khaki)";
+		category = "Eastern Factions";
+		#include "loadouts\ussr_ground_forces_1970_khaki.hpp"
+	};
+	class USSR_MOTOR_RIFLES_1980_KHAKI
+	{
+		displayName = "USSR Motor Rifles (1980, Khaki)";
+		category = "Eastern Factions";
+		#include "loadouts\ussr_motor_rifles_1980_khaki.hpp"
+	};
+	class USSR_MOTOR_RIFLES_1985_KHAKI
+	{
+		displayName = "USSR Motor Rifles (1985, Khaki)";
+		category = "Eastern Factions";
+		#include "loadouts\ussr_motor_rifles_1985_khaki.hpp"
+	};
 	class USSR_VDV_BEREZKA
 	{
 		displayName = "USSR Airborne Troops (Berezka)";
 		category = "Eastern Factions";
 		#include "loadouts\ussr_vdv_berezka.hpp"
 	};
+	
 	class CDF_AIRBORNE_TTSKO_DIGITAL
 	{
 		displayName = "CDF Airborne Infantry (TTsKO Digital)";
@@ -180,6 +202,7 @@ class CfgLoadouts
 		category = "Armaverse Factions";
 		#include "loadouts\cdf_nationalguard_ttsko.hpp"
 	};
+	
 	class TK_ARMY_BRUSHSTROKE
 	{
 		displayName = "Takistani Army (Brushstroke)";
@@ -192,12 +215,14 @@ class CfgLoadouts
 		category = "Armaverse Factions";
 		#include "loadouts\tk_ins.hpp"
 	};
+	
 	class UA_VDV_TTSKO
 	{
 		displayName = "UA Airborne Troops (TTsKO)";
 		category = "Eastern Factions";
 		#include "loadouts\ua_vdv_ttsko.hpp"
 	};
+	
 	class SLA_1980_FELDGRAU
 	{
 		displayName = "SLA (1980, Feldgrau)";
@@ -210,6 +235,7 @@ class CfgLoadouts
 		category = "Armaverse Factions";
 		#include "loadouts\sla_1990.hpp"
 	};
+	
 	class GENERIC_PARAMILITARY_OLIVE_AKM
 	{
 		displayName = "Generic Paramilitary (Olive, AKMs)";
@@ -228,12 +254,14 @@ class CfgLoadouts
 		category = "Other";
 		#include "loadouts\generic_paramilitary_tigerstripe_m16.hpp"
 	};
+	
 	class GDR_NVA_1980_STRICHTARN
 	{
 		displayName = "GDR Army (1980, Strichtarn)";
 		category = "Eastern Factions";
 		#include "loadouts\gdr_nva_1980_strichtarn.hpp"
 	};
+	
 	class AFR_MILITIA
 	{
 		displayName = "African Militia";
