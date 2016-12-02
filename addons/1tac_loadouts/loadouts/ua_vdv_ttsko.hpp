@@ -221,7 +221,7 @@ class dm : r
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"rhs_weap_svdp"};
 	silencer[] = {};
-	scope[] = {"rhs_acc_pso1"};
+	scope[] = {"rhs_acc_pso1m2"};
 	bipod[] = {};
 	magazines[] =
 	{

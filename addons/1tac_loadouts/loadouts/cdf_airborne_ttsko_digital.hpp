@@ -214,7 +214,7 @@ class dm : r
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"rhs_weap_svdp"};
 	silencer[] = {};
-	scope[] = {"rhs_acc_pso1"};
+	scope[] = {"rhs_acc_pso1m2"};
 	bipod[] = {};
 	magazines[] =
 	{
@@ -418,7 +418,7 @@ class sn : r
     headgear[] = {"rhs_beanie","rhs_beanie_green"};
     goggles[] = {};
     primaryWeapon[] = {"rhs_weap_svdp"};
-    scope[] = {"rhs_acc_pso1m21"};
+    scope[] = {"rhs_acc_pso1m2"};
 	bipod[] = {};
     sidearmWeapon[] = {"rhs_weap_makarov_pmm"};
     magazines[] =

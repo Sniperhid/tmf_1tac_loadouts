@@ -5,6 +5,7 @@
 
 /* assignGear specific macros */
 #define GETGEAR(var) ["cfgLoadouts",_side,_faction,_role,var] call CFUNC(getCfgEntry)
+#define LIST_1(var1) var1
 #define LIST_2(var1) var1,var1
 #define LIST_3(var1) var1,var1,var1
 #define LIST_4(var1) var1,var1,var1,var1
