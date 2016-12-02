@@ -499,7 +499,7 @@ class jp : baseMan
 {
     displayName = "Jet pilot";
     uniform[] = {"U_I_pilotCoveralls"};
-    headgear[] = {"MNP_Helmet_Dslyecxi"};
+    headgear[] = {"H_PilotHelmetHeli_O"};
     goggles[] = {"default"};
 	sidearmWeapon[] = {"delta_L9A1"};
     magazines[] =

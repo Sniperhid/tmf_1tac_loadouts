@@ -231,7 +231,7 @@ class dm : r
 	vest[] = {"rhsgref_6b23_ttsko_mountain_sniper"};
 	primaryWeapon[] = {"rhs_weap_svdp"};
 	silencer[] = {};
-	scope[] = {"rhs_acc_pso1"};
+	scope[] = {"rhs_acc_pso1m2"};
 	bipod[] = {};
 	magazines[] =
 	{
