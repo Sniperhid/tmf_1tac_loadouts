@@ -1,4 +1,4 @@
-
+# DEPECRATED - Now a module in 1Tac Misc - https://github.com/Sniperhid/1tac_misc
 
 # 1Tac TMF Loadouts
 
